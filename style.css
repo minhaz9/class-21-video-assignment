@@ -1,0 +1,383 @@
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.float-left {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+
+.gg {
+  background: red;
+  padding: 5px;
+  margin-top: 5px;
+  color: black;
+  border-radius: 5px;
+}
+
+.gg button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.gg:hover button {
+  color: white;
+}
+
+.gg:hover {
+  background: transparent;
+  border: 1px solid black;
+}
+
+.full-website .ff {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.full-website .ff .menu h2 {
+  float: left;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.full-website .ff .menu li {
+  float: right;
+  list-style: none;
+  padding: 12px 2px;
+  margin: 0px 12px;
+  position: relative;
+  transition: .5s;
+}
+
+.full-website .ff .menu li ul {
+  position: absolute;
+  background: white;
+  text-align: center;
+  left: 0;
+  top: 100%;
+  padding-left: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+.full-website .ff .menu li ul li {
+  padding: 12px 24px;
+  margin: -2px;
+}
+
+.full-website .ff .menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.full-website .ff .menu li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 0;
+  height: 3px;
+  background: #000;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.full-website .ff .menu li:hover::before {
+  width: 100%;
+}
+
+.full-website .ff .menu li:hover a {
+  color: red;
+}
+
+.full-website .ff .menu li:hover {
+  cursor: pointer;
+}
+
+.full-website .ff .menu li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.full-website .ff .menu #gg {
+  background: red;
+  padding: 5px;
+  margin-top: 5px;
+  float: right;
+  color: black;
+  border-radius: 5px;
+}
+
+.full-website .ff .menu #gg button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.full-website .ff .menu #gg:hover button {
+  color: white;
+}
+
+.full-website .ff .menu #gg:hover {
+  background: brown;
+}
+
+.full-website .banner {
+  background-image: url(./img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.full-website .banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.487);
+  z-index: 1;
+}
+
+.full-website .banner .banner-over {
+  width: 400px;
+  position: relative;
+  top: 30%;
+  left: -25%;
+  color: white;
+  z-index: 2;
+  cursor: default;
+}
+
+.full-website .banner .banner-over h2 {
+  margin: 20px 0px;
+}
+
+.full-website .banner .banner-over p {
+  margin: 30px 0px;
+}
+
+.full-website .banner .banner-over .gg {
+  background: red;
+  padding: 10px;
+  margin-top: 5px;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  transition: .5s;
+}
+
+.full-website .banner .banner-over .gg button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.full-website .banner .banner-over .gg:hover button {
+  color: white;
+}
+
+.full-website .banner .banner-over .gg:hover {
+  background: transparent;
+}
+
+.full-website .under-banner img {
+  width: 10%;
+  margin: 20px 28px;
+  cursor: pointer;
+}
+
+.full-website .beka-1 {
+  position: relative;
+  margin: 5% 0;
+  padding: 60px 0px;
+}
+
+.full-website .beka-1::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transform: skewY(-3.5deg);
+}
+
+.full-website .beka-1 .beka .div1 {
+  width: 30%;
+  float: left;
+  padding: 60px 0px;
+  color: white;
+}
+
+.full-website .beka-1 .beka .div1 .gg {
+  background: red;
+  padding: 10px;
+  margin-top: 5px;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid whitesmoke;
+  transition: .5s;
+}
+
+.full-website .beka-1 .beka .div1 .gg button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.full-website .beka-1 .beka .div1 .gg:hover button {
+  color: white;
+}
+
+.full-website .beka-1 .beka .div1 .gg:hover {
+  background: transparent;
+}
+
+.full-website .beka-1 .beka .div2 {
+  width: 70%;
+  float: right;
+  padding-top: 20px;
+  color: white;
+}
+
+.full-website .beka-1 .beka .div2 .part1 i {
+  font-size: 30px;
+  color: red;
+}
+
+.full-website .port-img div {
+  width: 30%;
+  float: left;
+  margin: 0px 15px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.full-website .port-img div img {
+  max-width: 90%;
+  position: relative;
+  margin: 15px 18px;
+  z-index: -1;
+  transition: .54s;
+}
+
+.full-website .port-img div:hover img {
+  transform: scale(1.3);
+}
+
+.full-website .carde {
+  margin: 50px;
+}
+
+.full-website .carde .card1 {
+  margin: auto;
+  background: rgba(0, 0, 0, 0.568);
+  width: 30%;
+  color: white;
+  padding: 18px 0px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transition: .5s;
+  transform: translate(-10px);
+}
+
+.full-website .carde .card1:hover {
+  background: #f35757;
+  transform: translate(10px);
+}
+
+.full-website .carde .card2 {
+  margin: auto;
+  background: rgba(255, 0, 0, 0.609);
+  width: 30%;
+  color: white;
+  padding: 18px 0px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+  transform: translate(-10px);
+  transition: .5s;
+}
+
+.full-website .carde .card2:hover {
+  background: #f19159;
+  transform: translate(10px);
+}
+
+.full-website .team {
+  position: relative;
+  padding: 80px 0px;
+  margin: 25px 0px;
+}
+
+.full-website .team::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.842);
+  z-index: -1;
+  transform: skewY(-3deg);
+}
+
+.full-website .team .team0 {
+  width: 70%;
+  z-index: 2;
+}
+
+.full-website .team .team0 .team1 {
+  width: 20%;
+  margin: auto;
+  border: 1px solid white;
+  color: white;
+}
+
+.full-website .team .team0 .team1 h4 {
+  font-size: 18px;
+}
+
+.full-website .team .team0 .team1 p {
+  font-size: 12px;
+}
+
+.full-website .team .team0 .team1 img {
+  width: 100%;
+}
+
+.full-website .footer {
+  padding: 18px 0px;
+  line-height: 20px;
+}
+
+.full-website .footer li {
+  list-style: none;
+  margin: auto;
+}
+
+.full-website .footer li a {
+  display: block;
+  font-size: 20px;
+  padding: 12px 18px;
+  color: white;
+  background: black;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
